@@ -1,0 +1,22 @@
+{
+  "name": "Joyce_Website",
+  "version": "1.0.0",
+  "description": "Joyce_Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "SET TAILWIND_MODE=WATCH&postcss tailwind.css -o ./dist/output.css --watch -verbose",
+    "prod": "SET NODE_ENV=production&postcss tailwind.css -o ./dist/output.css",
+    "build": "postcss tailwind.css -o tailwind.min.css",
+    "watch": "postcss tailwind.css -o tailwind.min.css --watch"
+  },
+  "author": "Jeffrey",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1",
+    "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
+    "postcss-cli": "^10.1.0",
+    "postcss-nested": "^6.0.0",
+    "tailwindcss": "^3.2.4"
+  }
+}
